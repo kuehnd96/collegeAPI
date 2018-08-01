@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DavidKuehn.CollegeAPI.Core", "DavidKuehn.CollegeAPI.Core\DavidKuehn.CollegeAPI.Core.csproj", "{86EC3ECD-D357-4A6F-A188-53F1D567939D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DavidKuehn.CollegeAPI.Infrastructure", "DavidKuehn.CollegeAPI.Infrastructure\DavidKuehn.CollegeAPI.Infrastructure.csproj", "{435D6C83-75DD-43A2-9414-F3515409F43D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{86EC3ECD-D357-4A6F-A188-53F1D567939D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86EC3ECD-D357-4A6F-A188-53F1D567939D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86EC3ECD-D357-4A6F-A188-53F1D567939D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{435D6C83-75DD-43A2-9414-F3515409F43D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{435D6C83-75DD-43A2-9414-F3515409F43D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{435D6C83-75DD-43A2-9414-F3515409F43D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{435D6C83-75DD-43A2-9414-F3515409F43D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{86EC3ECD-D357-4A6F-A188-53F1D567939D}</ProjectGuid>
+    <ProjectGuid>{435D6C83-75DD-43A2-9414-F3515409F43D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DavidKuehn.CollegeAPI.Core</RootNamespace>
-    <AssemblyName>DavidKuehn.CollegeAPI.Core</AssemblyName>
+    <RootNamespace>DavidKuehn.CollegeAPI.Infrastructure</RootNamespace>
+    <AssemblyName>DavidKuehn.CollegeAPI.Infrastructure</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,11 +40,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdvicentTuitionCalculator.cs" />
-    <Compile Include="Interfaces\ICollegeRepository.cs" />
-    <Compile Include="Interfaces\ITuitionCalculator.cs" />
-    <Compile Include="Models\College.cs" />
+    <Compile Include="CollegeCSVRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DavidKuehn.CollegeAPI.Core\DavidKuehn.CollegeAPI.Core.csproj">
+      <Project>{86ec3ecd-d357-4a6f-a188-53f1d567939d}</Project>
+      <Name>DavidKuehn.CollegeAPI.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
