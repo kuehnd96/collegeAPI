@@ -9,7 +9,8 @@ namespace DavidKuehn.CollegeAPI.Infrastructure
         public College GetCollegeByName(string name)
         {
             //TODO: Awaiting Cassie's answer to the question
-            throw new NotImplementedException();
+
+            return new College("Adelphi University", 38657, 15527);
         }
     }
 }

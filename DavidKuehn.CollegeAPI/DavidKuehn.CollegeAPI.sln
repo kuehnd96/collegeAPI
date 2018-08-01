@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DavidKuehn.CollegeAPI.Core"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DavidKuehn.CollegeAPI.Infrastructure", "DavidKuehn.CollegeAPI.Infrastructure\DavidKuehn.CollegeAPI.Infrastructure.csproj", "{435D6C83-75DD-43A2-9414-F3515409F43D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DavidKuehn.CollegeAPI.WebAPI", "DavidKuehn.CollegeAPI.WebAPI\DavidKuehn.CollegeAPI.WebAPI.csproj", "{29CD1B01-AD0A-4AA0-BFC8-F1C7191F8696}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{435D6C83-75DD-43A2-9414-F3515409F43D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{435D6C83-75DD-43A2-9414-F3515409F43D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{435D6C83-75DD-43A2-9414-F3515409F43D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29CD1B01-AD0A-4AA0-BFC8-F1C7191F8696}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29CD1B01-AD0A-4AA0-BFC8-F1C7191F8696}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29CD1B01-AD0A-4AA0-BFC8-F1C7191F8696}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29CD1B01-AD0A-4AA0-BFC8-F1C7191F8696}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

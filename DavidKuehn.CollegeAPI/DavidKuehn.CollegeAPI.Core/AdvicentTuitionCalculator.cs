@@ -13,6 +13,7 @@ namespace DavidKuehn.CollegeAPI.Core
                 throw new ArgumentNullException(nameof(college));
             }
 
+            // TODO: Confirm that in-state tuition is always used
             decimal annualCost = college.InStateTuition;
 
             if (includeRoomAndBoard)
