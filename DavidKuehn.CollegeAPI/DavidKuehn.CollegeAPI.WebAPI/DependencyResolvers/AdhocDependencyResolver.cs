@@ -1,6 +1,7 @@
 ﻿using DavidKuehn.CollegeAPI.Core;
 using DavidKuehn.CollegeAPI.Core.Interfaces;
 using DavidKuehn.CollegeAPI.Infrastructure;
+using DavidKuehn.CollegeAPI.WebAPI.Controllers;
 using System;
 using System.Collections.Generic;
 using System.Web.Http.Dependencies;
@@ -24,14 +25,9 @@ namespace DavidKuehn.CollegeAPI.WebAPI.DependencyResolvers
         public object GetService(Type serviceType)
         {
             // Ad-hoc dependency injection
-            if (serviceType == typeof(ITuitionCalculator))
+            if (serviceType == typeof(TuitionController))
             {
-                return new AdvicentTuitionCalculator();
-            }
-
-            if (serviceType == typeof(ICollegeRepository))
-            {
-                return new CollegeCSVRepository();
+                return new TuitionController(new AdvicentTuitionCalculator(), new CollegeSQLRepository());
             }
 
             return null;

@@ -1,4 +1,5 @@
 ﻿using DavidKuehn.CollegeAPI.Core.Interfaces;
+using System.Threading.Tasks;
 using System.Web.Http;
 
 namespace DavidKuehn.CollegeAPI.WebAPI.Controllers
@@ -14,15 +15,19 @@ namespace DavidKuehn.CollegeAPI.WebAPI.Controllers
             _collegeRepo = collegeRepo;
         }
 
+        public TuitionController()
+        {
+        }
+
         [HttpGet]
-        public IHttpActionResult Get(string collegeName, bool includeRoomAndBoard = true)
+        public async Task<IHttpActionResult> Get(string collegeName, bool includeRoomAndBoard = true)
         {
             if (string.IsNullOrEmpty(collegeName))
             {
                 BadRequest("Error: College name is required");
             }
 
-            var college = _collegeRepo.GetCollegeByName(collegeName);
+            var college = await _collegeRepo.GetCollegeByName(collegeName);
 
             if (college == null)
             {

@@ -1,9 +1,10 @@
 ﻿using DavidKuehn.CollegeAPI.Core.Models;
+using System.Threading.Tasks;
 
 namespace DavidKuehn.CollegeAPI.Core.Interfaces
 {
     public interface ICollegeRepository
     {
-        College GetCollegeByName(string name);
+        Task<College> GetCollegeByName(string name);
     }
 }
