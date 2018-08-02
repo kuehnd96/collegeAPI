@@ -24,7 +24,7 @@ namespace DavidKuehn.CollegeAPI.WebAPI.Controllers
         {
             if (string.IsNullOrEmpty(collegeName))
             {
-                BadRequest("Error: College name is required");
+                return BadRequest("Error: College name is required");
             }
 
             var college = await _collegeRepo.GetCollegeByName(collegeName);
