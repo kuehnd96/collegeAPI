@@ -1,5 +1,7 @@
 collegeAPI By David Kuehn
+
 A coding exercise
+
 Duration: ~3 hours and 15 minutes (including installation time for Sql Express)
 
 Overall architecture and project structure inspired by recent .NET Rocks podcast episode with Steve Smith on clean architecture to promote testability, maintainability, easy to swap out a modules, separation of concerns, and readability.
