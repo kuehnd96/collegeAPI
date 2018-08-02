@@ -4,6 +4,8 @@ A coding exercise
 
 Duration: ~3 hours and 15 minutes (including installation time for Sql Express)
 
+Important: You will need to have SQL Express installed where ever this is run.
+
 Overall architecture and project structure inspired by recent .NET Rocks podcast episode with Steve Smith on clean architecture to promote testability, maintainability, easy to swap out a modules, separation of concerns, and readability.
 
 Please see the InitialDesign.jpg picture in the Design folder for a look of my initial design. I drew this before any coding was done.
